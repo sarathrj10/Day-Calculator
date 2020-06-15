@@ -4,7 +4,7 @@ const result=document.getElementById('resultscreen');
 const selector=document.getElementById('selectorscreen');
 const negative=document.getElementById('negativescreen');
 //adding screen height
-home.setAttribute('style',`height: ${window.outerHeight}px;`)
+// home.setAttribute('style',`height: ${window.outerHeight}px;`)
 
 //homescreen
 const yesbtn=document.getElementById('buttons').firstElementChild;
