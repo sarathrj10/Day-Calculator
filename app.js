@@ -44,8 +44,10 @@ function gonselector(){
 const gobtn=document.getElementById('go');
 gobtn.addEventListener('click',runcalculation);
 function runcalculation(){
-    // getting year from selectors
+    // getting dates from selectors
     const year=parseInt(document.getElementById('selectyear').value);
+    const submnth=document.getElementById('selectmonth').value;
+    const subday=parseInt(document.getElementById('selectday').value);
     //getting month and day
     const date=new Date();
     const month=date.getMonth();
@@ -64,6 +66,10 @@ function runcalculation(){
        }
     }
     total=total+count;
+    //substracting days
+    const a=submnthtodays(submnth);
+    total=total-a;
+    total=total-subday;
     //displaying in the result screen
     const declare=document.createElement('h2');
     declare.className='mt-4 resultdeclare';
@@ -119,6 +125,44 @@ function mnthtodays(month){
         return 304;
     }
     if(month == 11){
+        return 334;
+    }
+}
+function submnthtodays(month){
+    if(month == 'january'){
+        return 0;
+    }
+    if(month == 'february'){
+        return 31;
+    }
+    if(month == 'march'){
+        return 59;
+    }
+    if(month == 'april'){
+        return 90;
+    }
+    if(month == 'may'){
+        return 120;
+    }
+    if(month == 'june'){
+        return 151;
+    }
+    if(month == 'july'){
+        return 181;
+    }
+    if(month == 'August'){
+        return 212;
+    }
+    if(month == 'September'){
+        return 243;
+    }
+    if(month == 'october'){
+        return 273;
+    }
+    if(month == 'november'){
+        return 304;
+    }
+    if(month == 'december'){
         return 334;
     }
 }
