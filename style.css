@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
+.container{
+   padding: 0;
+}
 #selectorscreen,#resultscreen,#negativescreen{
     display: none;
 }
@@ -12,7 +14,7 @@ url("./images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    
 }
 #selectorscreen{
     background: linear-gradient( transparent, rgb(157, 235, 150)),
