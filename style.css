@@ -14,7 +14,7 @@ url("./images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    height: 100vh;
 }
 #selectorscreen{
     background: linear-gradient( transparent, rgb(157, 235, 150)),
